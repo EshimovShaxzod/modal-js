@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background: url('./bmw.jpg'), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.show-btn{
+    padding: 10px 24px;
+    background-color: transparent;
+    font-size: 19px;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(26, 35, 35);
+    border: 1px solid rgb(28, 27, 27);
+    transition: .4s;
+}
+
+.show-btn:hover{
+    background-color: rgb(12, 17, 17);
+}
+
+.hidden{
+    display: none;
+}
+
+#modal{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    transition: 2s;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.close-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close-btn:active{
+    color: red;
+}
+
+.modal-body__title{
+    margin-bottom: 18px;
+}
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    backdrop-filter:blur(5px);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
